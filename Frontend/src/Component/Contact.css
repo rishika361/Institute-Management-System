@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 1000px;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    padding: 120px;
+    font-family: 'Montserrat', sans-serif
+  }
+  
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 0; /* Remove gap to make the sections appear merged */
+  }
+  
+  .contact-info,
+  .contact-form {
+    padding: 50px;
+    flex: 1;
+    background-color: #e7e3e3;
+    border-radius: 5px;
+  }
+  
+  .contact-info {
+    background-color: #512da8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-sizing: border-box; 
+    
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .contact-info h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: #eeecec;
+    margin-top: 10px;
+  }
+  
+  .contact-detail {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #eeecec;
+  }
+  
+  .contact-detail .contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-detail div {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    background-color: #512da8;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #45268d;
+  }
+  

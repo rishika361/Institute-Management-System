@@ -1,0 +1,136 @@
+.main-heading {
+  color: #4A4A8E; /* Purple shade */
+}
+
+.sub-heading {
+  color: #00BFFF; /* Blue shade */
+}
+
+.search-bar {
+  height: 50px;
+  background-color: rgb(132, 96, 132);
+  border-radius: 20px;
+ margin: 90px, 90px;
+ text-align: center;
+ color: white;
+}
+
+.course-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, scale 0.3s;
+  transform: scale(1); /* Default scale */
+  margin: 0 10px;
+  
+}
+
+.course-card:hover {
+  transform: translateY(-5px) scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.apply-button {
+  background-color: #4A4A8E; /* Purple */
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #00BFFF; /* Blue */
+}
+
+.course-row {
+  justify-content: center;
+  margin-bottom: 30px; /* Increase vertical space */
+}
+
+
+
+.container {
+  padding: 0 20px; /* Reduce side space */
+}
+
+.company-logos img {
+  max-width: 100px; 
+}
+.company-logos {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite; /* Continuous scroll */
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  margin: 0 15px;
+}
+.company-logos {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  color: white;
+  font-size: 100px;
+  background-color: rgb(93, 33, 93);
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite; /* Continuous scroll */
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  margin: 0 15px;
+}
+
+.logo-item img {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Stop animation on hover */
+.company-logos:hover .logo-container {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll only halfway to loop seamlessly */
+  }
+}
+
+.enroll-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.enroll-btn a {
+  color: white; /* Ensures the link text is white */
+  text-decoration: none; /* Removes the underline */
+}
+
+.enroll-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

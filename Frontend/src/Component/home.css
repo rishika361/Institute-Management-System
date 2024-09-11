@@ -1,0 +1,307 @@
+/* Carousel container styling */
+.welcome-message {
+  position: relative;
+  padding: 20px;
+  background: rgba(237, 211, 245, 0.5); /* Semi-transparent background */
+  color:black;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space between welcome message and slider */
+}
+
+.welcome-message h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.welcome-message p {
+  margin-top: 10px; /* Reduced margin-top to decrease space between heading and paragraph */
+  font-size: 16px;;
+}
+.carousel-container {
+  width: 80%;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative; /* Add this to position dots relative to the container */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Dots styling */
+.slick-dots {
+  bottom: -30px; /* Adjust this value to move dots below the image */
+  text-align: center;
+  position: absolute; /* Position dots absolutely within the container */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #555;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #af4dcc;
+  opacity: 1;
+}
+
+/* Hide the previous and next arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Happy Students section styling */
+.happy-students-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.happy-students-container h2 {
+  font-size: 24px;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.student-feedback {
+  padding: 20px;
+}
+
+.student-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.student-name {
+  font-size: 18px;
+  color:black;
+}
+
+.student-feedback-text {
+  font-size: 16px;
+  color: black;
+}
+
+/* Dots styling for Happy Students */
+.happy-students-container .slick-dots {
+  bottom: -20px; /* Adjust this value to move dots below the feedback */
+  text-align: center;
+}
+
+.happy-students-container .slick-dots li button:before {
+  font-size: 12px;
+  color: #555;
+  opacity: 0.75;
+}
+
+.happy-students-container .slick-dots li.slick-active button:before {
+  color: #af4dcc;
+  opacity: 1;
+}
+
+/* Hide the previous and next arrows */
+.happy-students-container .slick-prev,
+.happy-students-container .slick-next {
+  display: none !important;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.view-all-button {
+  display: block;
+  width: 160px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures all cards have the same height */
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.course-banner {
+  position: relative;
+}
+
+.course-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.course-content {
+  padding: 20px;
+  background-color: #fff;
+  flex-grow: 1; /* Allows the content to grow and push the button to the bottom */
+}
+
+.course-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.interested-geeks,
+.course-rating {
+  font-size: 14px;
+  color: #555;
+}
+
+.course-info svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  fill: #007bff;
+}
+
+.course-level {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.course-level svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  fill: #007bff;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #620ba0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+}
+/* Institute Status section styling */
+.institute-status {
+  width: 80%;
+  margin: 40px auto; /* Added margin for space */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #e1e1e1; /* Light border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.status-location-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space out items */
+  align-items: flex-start; /* Align items at the start of the container */
+}
+
+.status-info {
+  flex: 1; /* Allow this section to take up available space */
+  margin-right: 20px; /* Space between status and location */
+}
+
+.location-info {
+  flex: 1; /* Allow this section to take up available space */
+}
+
+.institute-status h2 {
+  font-size: 24px;
+  color:black;
+  margin-bottom: 15px;
+}
+
+.institute-status p {
+  font-size: 16px;
+  color:black;
+  margin: 10px 0;
+}
+
+.institute-status strong {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+.location-info h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.location-info p {
+  font-size: 16px;
+  color:black;
+}
+a{
+  text-decoration: none;
+}
+
+

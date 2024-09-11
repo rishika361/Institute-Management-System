@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Slight background for contrast */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust font size for heading */
+}
+
+.formControl {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.btnSubmit {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.btnLink {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btnLink:focus {
+    outline: none;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.passwordToggleIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.alert {
+    color: #d9534f;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: Arial,sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container */
+.admissionpage-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.admissionpage-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form Elements */
+.admissionpage-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admissionpage-container label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admissionpage-container input[type="text"],
+.admissionpage-container input[type="email"],
+.admissionpage-container input[type="tel"],
+.admissionpage-container input[type="date"],
+.admissionpage-container input[type="number"],
+.admissionpage-container select,
+.admissionpage-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.admissionpage-container textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.admissionpage-container input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Buttons */
+.admissionpage-container button,
+.admissionpage-container input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  background-color: #512da8;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.admissionpage-container button:hover,
+.admissionpage-container input[type="submit"]:hover {
+  background-color: darkpurple;
+}
+
+/* Payment Method Section */
+.payment-method {
+  margin-bottom: 200px;
+}
+
+.payment-method input[type="text"],
+.payment-method input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.payment-method input[type="text"]::placeholder,
+.payment-method input[type="number"]::placeholder {
+  color: #888; /* Placeholder text color for better visibility */
+}
+
+/* Button styling within payment method section */
+.payment-method button {
+  width: 100%;
+  height: 40px;
+  background-color:#512da8; /* Changed to a green color for buttons in the payment method section */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.payment-method button:hover {
+  background-color: #512da8; /* Changed to a darker green for hover state */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Focus States */
+.admissionpage-container input:focus,
+.admissionpage-container textarea:focus,
+.admissionpage-container select:focus {
+  outline: 2px solid #512da8;
+  outline-offset: 2px;
+}
